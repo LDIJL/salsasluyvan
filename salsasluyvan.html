@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUYVAN - Salsas Gourmet</title>
+    <meta name="description" content="Salsas de especialidad con sabor, calidad y una propuesta diferente.">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER / MENÚ PRINCIPAL -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>LUYVAN</h1>
+            <span>Salsas Gourmet</span>
+        </div>
+        <nav class="desktop-nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#conocenos">Conócenos</a>
+            <a href="#salsas">Nuestras Salsas</a>
+            <a href="#donde-comprar">¿Dónde comprar?</a>
+            <a href="#promociones">Promociones</a>
+            <a href="#recetas">Recetas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count" class="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- HERO / ENCABEZADO PRINCIPAL -->
+    <section id="inicio" class="hero" style="background-image: url('blob:https://gemini.google.com/620b3301-f409-4135-9450-434f82a8f6fe');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="subtitle">Hecho en México · Cocina de Autor</span>
+            <h2>Salsas LUYVAN</h2>
+            <p>Salsas de especialidad con sabor, calidad y una propuesta diferente.</p>
+            <div class="hero-buttons">
+                <a href="#salsas" class="btn btn-primary">Conoce nuestras salsas</a>
+                <a href="#conocenos" class="btn btn-outline-light">Nuestra Historia</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN "CONÓCENOS" -->
+    <section id="conocenos" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Conócenos</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>¿Quiénes somos y Nuestra Historia?</h3>
+                    <p>Nuestra historia comienza en San Mateo Huexotla, Texcoco, un lugar estratégico que nos conecta con el corazón de la gastronomía y los mejores insumos del centro del país[cite: 8]. La idea surgió al observar que la salsa es indispensable en la alimentación diaria, identificando la necesidad de opciones accesibles, prácticas y de sabores tradicionales[cite: 8].</p>
+                    <p>El nombre <strong>LUYVAN</strong> nace como reconocimiento y homenaje a dos personas que brindaron apoyo clave al desarrollo del proyecto, combinando elementos representativos de sus apellidos[cite: 8].</p>
+                    <br>
+                    <!-- Espacio para imagen de la empresa o equipo -->
+                    <div class="image-container">
+                        <img src="URL_DE_TU_IMAGEN_AQUI" alt="Historia LUYVAN">
+                    </div>
+                </div>
+                <div>
+                    <h3>Misión</h3>
+                    <p>Poner al alcance de todos los consumidores frascos de salsas de especialidad, de alta calidad, con sabores excepcionales que se pueden acompañar con el platillo que prefieran[cite: 8].</p>
+                    <br>
+                    <h3>Visión</h3>
+                    <p>Crecer, consolidarse y posicionarse como una organización líder en el negocio de salsas, siendo reconocida por su calidad y asegurando la satisfacción del consumidor que busca algo diferente[cite: 8].</p>
+                    <br>
+                    <h3>Nuestros Valores</h3>
+                    <ul class="values-list">
+                        <li><strong>Respeto:</strong> Fomentamos un ambiente de convivencia positivo[cite: 8].</li>
+                        <li><strong>Igualdad:</strong> Mismas oportunidades para todo el personal basadas en el mérito[cite: 8].</li>
+                        <li><strong>Honradez:</strong> Promovemos la rectitud para ser reconocidos como una empresa justa[cite: 8].</li>
+                        <li><strong>Lealtad:</strong> Inspiramos el compromiso con la misión y los valores[cite: 8].</li>
+                        <li><strong>Responsabilidad:</strong> Cumplimiento eficiente de las obligaciones[cite: 8].</li>
+                        <li><strong>Legalidad:</strong> Credibilidad y confianza actuando conforme a las normas[cite: 8].</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN "NUESTRAS SALSAS" -->
+    <section id="salsas" class="section">
+        <div class="container">
+            <h2 class="section-title">Nuestras Salsas</h2>
+            <p class="section-subtitle">Línea inicial de especialidad con ingredientes naturales[cite: 8].</p>
+            
+            <div class="products-grid">
+                <!-- Salsa 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="URL_DE_TU_IMAGEN_AQUI" alt="Salsa de Piña con Habanero">
+                        <span class="product-size">250 ml</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Salsa de Piña con Habanero</h3>
+                        <p class="tagline">Piña + chile habanero + miel + jugo de limón + mezcal[cite: 8]</p>
+                        <p class="price">$71.20 MXN</p>
+                        <button class="btn btn-outline" onclick="addToCart('Salsa Piña Habanero', 71.20, '250 ml')">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Salsa 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="URL_DE_TU_IMAGEN_AQUI" alt="Salsa de Frutos Rojos">
+                        <span class="product-size">250 ml</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Salsa de Frutos Rojos</h3>
+                        <p class="tagline">Blueberries + zarzamora + frambuesa + chiles secos + mezcal[cite: 8]</p>
+                        <p class="price">$71.20 MXN</p>
+                        <button class="btn btn-outline" onclick="addToCart('Salsa Frutos Rojos', 71.20, '250 ml')">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Salsa 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="URL_DE_TU_IMAGEN_AQUI" alt="Salsa Tierra Nueva">
+                        <span class="product-size">250 ml</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Salsa Tierra Nueva</h3>
+                        <p class="tagline">Sabores tradicionales, textura y consistencia ideal[cite: 8]</p>
+                        <p class="price">$71.20 MXN</p>
+                        <button class="btn btn-outline" onclick="addToCart('Salsa Tierra Nueva', 71.20, '250 ml')">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN "¿POR QUÉ LUYVAN?" -->
+    <section class="section bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="section-title text-white">¿Por qué LUYVAN?</h2>
+            <div class="grid-3">
+                <div class="feature-box">
+                    <h4>Sabores diferenciados</h4>
+                    <p>Inspiración en sabores tradicionales con toques de autor, combinando dulzor natural y picante[cite: 8].</p>
+                </div>
+                <div class="feature-box">
+                    <h4>Calidad y Practicidad</h4>
+                    <p>Ingredientes naturales libres de conservadores en presentaciones de plástico prácticas para la mesa[cite: 8].</p>
+                </div>
+                <div class="feature-box">
+                    <h4>Precio Competitivo</h4>
+                    <p>Propuesta accesible dirigida al mercado popular y regional sin sacrificar la excelencia gourmet[cite: 8].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN "¿DÓNDE COMPRAR?" -->
+    <section id="donde-comprar" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">¿Dónde Comprar?</h2>
+            <p class="section-subtitle">Encuéntranos en cadenas de bajo costo por su alta rotación comercial[cite: 8].</p>
+            
+            <div class="grid-3 locations-list">
+                <div>
+                    <h4>Texcoco</h4>
+                    <ul>
+                        <li>3B – Calle José María Morelos</li>
+                        <li>Neto – Av. Juárez Sur</li>
+                    </ul>
+                    <h4>Ecatepec</h4>
+                    <ul>
+                        <li>3B – Av. Central</li>
+                        <li>Neto – Vía Morelos</li>
+                        <li>3B – Jardines de Morelos</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Nezahualcóyotl</h4>
+                    <ul>
+                        <li>Neto – Av. Chimalhuacán</li>
+                        <li>3B – Benito Juárez</li>
+                    </ul>
+                    <h4>Chimalhuacán</h4>
+                    <ul>
+                        <li>Neto – Cabecera Municipal</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Chicoloapan</h4>
+                    <ul>
+                        <li>3B – Cabecera Municipal</li>
+                    </ul>
+                    <h4>Atenco</h4>
+                    <ul>
+                        <li>3B – Av. Nacional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN "PROMOCIONES" & "RECETAS" -->
+    <section id="promociones" class="section">
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <h2 class="section-title" style="text-align: left;">Promociones</h2>
+                    <ul class="check-list">
+                        <li>Ofertas de introducción[cite: 8]</li>
+                        <li>Descuentos especiales[cite: 8]</li>
+                        <li>Combos familiares[cite: 8]</li>
+                        <li>Promociones 3x2 en puntos de venta[cite: 8]</li>
+                        <li>Degustaciones para descubrir sabores[cite: 8]</li>
+                    </ul>
+                    <!-- Espacio para imagen de promoción -->
+                    <div class="image-container" style="margin-top: 1rem;">
+                        <img src="URL_DE_TU_IMAGEN_AQUI" alt="Promociones LUYVAN">
+                    </div>
+                </div>
+                <div id="recetas">
+                    <h2 class="section-title" style="text-align: left;">Recetas e Ideas</h2>
+                    <ul class="check-list">
+                        <li>Tacos y antojitos mexicanos[cite: 8]</li>
+                        <li>Carnes y asados de fin de semana[cite: 8]</li>
+                        <li>Botanas y snacks para compartir[cite: 8]</li>
+                        <li>Acompañamiento perfecto para cualquier comida cotidiana[cite: 8]</li>
+                    </ul>
+                    <!-- Espacio para imagen de platillo -->
+                    <div class="image-container" style="margin-top: 1rem;">
+                        <img src="URL_DE_TU_IMAGEN_AQUI" alt="Recetas con Salsas LUYVAN">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALIDAD Y CONFIANZA -->
+    <section class="section bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="section-title text-white">Calidad que da Confianza</h2>
+            <p style="max-width: 700px; margin: 0 auto; color: #ddd;">
+                En LUYVAN garantizamos el uso de ingredientes frescos de la Central de Abastos y la estandarización rigurosa de cada receta. Nuestros procesos de producción, lavado, asado, envasado y etiquetado cumplen estrictamente con la NOM-251 y la NOM-051 para tu total seguridad[cite: 8].
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN "CONTACTO" -->
+    <section id="contacto" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>Información General</h3>
+                    <p><strong>Ubicación:</strong> San Mateo Huexotla, Texcoco, Estado de México[cite: 8]</p>
+                    <p><strong>Correo:</strong> contacto@luyvan.com</p>
+                    <p><strong>Teléfono:</strong> +52 (55) 1234-5678</p>
+                    <br>
+                    <h3>Redes Sociales</h3>
+                    <p>Síguenos en Facebook, Instagram y TikTok para conocer nuestras dinámicas y promociones[cite: 8].</p>
+                </div>
+                <div class="form-container">
+                    <form onsubmit="event.preventDefault(); alert('Mensaje enviado.');">
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Correo electrónico" required>
+                        <input type="tel" placeholder="Teléfono">
+                        <input type="text" placeholder="Ciudad">
+                        <input type="text" placeholder="Asunto">
+                        <textarea placeholder="Mensaje" rows="4" required></textarea>
+                        <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2>Salsas LUYVAN</h2>
+                <p>Salsas de especialidad con sabor, calidad y una propuesta diferente.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#conocenos">Conócenos</a>
+                <a href="#salsas">Nuestras Salsas</a>
+                <a href="#donde-comprar">¿Dónde comprar?</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="footer-legal">
+                <p>Redes Sociales: FB | IG | TK</p>
+                <p><a href="#">Aviso de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BARRA / CTA FIJO (Sticky Bottom) -->
+    <div class="sticky-bar">
+        <a href="#salsas" class="btn btn-outline-light btn-small">Comprar Salsas</a>
+        <a href="#donde-comprar" class="btn btn-primary btn-small">Encuentra tu tienda cercana</a>
+    </div>
+
+    <!-- CARRITO LATERAL -->
+    <div id="cart-overlay" class="cart-overlay" onclick="toggleCart()"></div>
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button class="close-cart" onclick="toggleCart()">✕</button>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00 MXN</span>
+            </div>
+            <!-- Botón conectado a Hotmart u otra pasarela -->
+            <button class="btn btn-primary w-100" onclick="goToCheckout()">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        let cart = [];
+
+        function toggleCart() {
+            document.getElementById('cart-sidebar').classList.toggle('active');
+            document.getElementById('cart-overlay').classList.toggle('active');
+        }
+
+        function addToCart(name, price, size) {
+            cart.push({ name, price, size });
+            updateCartUI();
+            toggleCart();
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const container = document.getElementById('cart-items');
+            const count = document.getElementById('cart-count');
+            const totalPrice = document.getElementById('cart-total-price');
+
+            container.innerHTML = '';
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                total += item.price;
+                container.innerHTML += `
+                    <div class="cart-item">
+                        <div>
+                            <h4>${item.name}</h4>
+                            <p style="font-size:0.8rem; color:#888;">${item.size}</p>
+                            <strong style="color:var(--rust-red);">$${item.price.toFixed(2)}</strong>
+                        </div>
+                        <button onclick="removeFromCart(${index})" style="background:none; border:none; cursor:pointer; color:red;">✕</button>
+                    </div>
+                `;
+            });
+
+            count.innerText = cart.length;
+            totalPrice.innerText = `$${total.toFixed(2)} MXN`;
+        }
+
+        function goToCheckout() {
+            if(cart.length === 0) {
+                alert("Tu carrito está vacío.");
+                return;
+            }
+            // Aquí puedes pegar tu enlace de Hotmart
+            window.location.href = "https://pay.hotmart.com/TU_ENLACE_AQUI"; 
+        }
+    </script>
+</body>
+</html>
